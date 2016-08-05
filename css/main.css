@@ -1,6 +1,102 @@
 /* Coded by Paliy Rostyslav. e-mail: paliy1984@gmail.com. skype: ros.coprandos  !!!SYLB!!! */
 
 
+/*---------- Global ----------*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+
+/*---------- Header ----------*/
+
+header {
+    background: #69d2e7;
+    border-top: 5px solid #fa6900;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.container a {
+    display: inline-flex;
+    align-self: flex-start;
+    margin: 35px 100px 80px 100px;
+    text-decoration: none;
+}
+
+#button-text {
+    display: block;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    line-height: 25px;
+    margin-top: -5px;
+    color: #000;
+}
+
+#button-text span {
+    display: block;
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 83px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    line-height: 80px;
+}
+
+header h3 {
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding-bottom: 190px;
+}
+
+@media screen and (max-width: 720px) {
+    .container a {
+        margin: 35px 30px 80px 30px;
+    }
+    header h1 {
+        font-size: 53px;
+        line-height: 50px;
+    }
+    header h3 {
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #button-text {
+        font-size: 16px;
+        text-align: center;
+    }
+    #button-text span {
+        display: none;
+    }
+}
+
+
+/*---------- About ----------*/
+
+
+
 
 /*---------- Clear Fix 001 ----------*/
 
@@ -23,21 +119,4 @@ html[xmlns] .clearfix {
 
 * html .clearfix {
     height: 1%;
-}
-
-/*---------- Clear Fix 002 ----------*/
-
-.cf:before,
-.cf:after {
-    content: " "; 
-    display: table;
-}
-
-.cf:after {
-    clear: both;
-}
-
-
-.cf {
-    *zoom: 1;
 }
