@@ -95,7 +95,137 @@ header h3 {
 
 /*---------- About ----------*/
 
+#about {
+    display: block;
+    background-color: #f1f1f1;
+}
 
+#about-us {
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 66.5%;
+    margin-left: 16.75%;
+    text-align: center;
+    margin-top: -100px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#about-us h3 {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+}
+
+#about-us p {
+    font-size: 22px;
+    margin: 0 20px 50px 20px;
+}
+
+.science {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    padding-top: 250px;
+}
+
+.science article {
+    background-color: #fff;
+    
+}
+
+.science article:nth-child(1) {
+    flex: 0 1 calc(50% - 0.5em);
+}
+
+.science article:nth-child(2) {
+    background-color: #69d2e7;
+    flex: 0 1 calc(50% - 0.5em);
+}
+
+.science article:nth-child(3) {
+   flex: 0 1 calc(50% - 0.5em);
+}
+
+
+
+/* #about ul li {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 250px;
+    margin: 0;
+}
+
+#about ul li {
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    height: 162px;
+    width: 162px;
+    background-color: #fff;
+    font-size: 24px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+#about img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+#about li p {
+    padding-top: 50px;
+}
+
+
+#about ul li:nth-child(2) {
+    background-color: #69d2e7;
+}*/
+
+@media screen and (max-width: 720px) {
+    #about-us {
+        width: 86%;
+        margin-left: 7%;
+    }
+    #about-us h3 {
+        font-weight: 700;
+        font-size: 30px;
+        text-align: center;
+    }
+    #about-us p {
+        font-size: 18px;
+        margin: 0 20px 50px 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #about-us {
+        width: 86%;
+        margin-left: 7%;
+    }
+    #about-us h3 {
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+    }
+    #about-us p {
+        font-size: 16px;
+        margin: 0 20px 50px 20px;
+    }
+}
+
+
+/*---------- Browser ----------*/
+
+#browser {
+    background-color: #fa6900;
+}
 
 
 /*---------- Clear Fix 001 ----------*/
