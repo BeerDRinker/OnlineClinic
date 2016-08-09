@@ -13,7 +13,6 @@ ul {
     list-style-type: none;
 }
 
-
 a {
     text-decoration: none;
 }
@@ -192,6 +191,12 @@ header h3 {
     padding-bottom: 20px;
 }
 
+@media screen and (max-width: 825px) {
+    .science {
+        padding-top: 300px;
+    }
+}
+
 @media screen and (max-width: 720px) {
     #about-us {
         width: 86%;
@@ -214,6 +219,12 @@ header h3 {
     }
 }
 
+@media screen and (max-width: 530px) {
+    .science {
+        padding-top: 250px;
+    }
+}
+
 @media screen and (max-width: 480px) {
     #about-us {
         width: 86%;
@@ -230,6 +241,26 @@ header h3 {
     }
     .science p {
         font-size: 18px;
+    }
+    .science figure {
+        width: 110px;
+        height: 110px;
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    .science figure img {
+        padding-top: 23px;
+        width: 50%;
+        height: 55%;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .science {
+        padding-top: 300px;
     }
 }
 
@@ -276,12 +307,13 @@ header h3 {
 
 #testimonials {
     background-color: #f1f1f1;
+    padding-top: 60px;
 }
 
 #testimonials img {
     display: block;
     margin: 0 auto;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 #user {
@@ -291,7 +323,6 @@ header h3 {
     width: 180px;
     background-color: #fff;
     border-radius: 50%;
-    margin-top: 50px;
 }
 
 #testimonials h4 {
@@ -409,10 +440,10 @@ header h3 {
 
 @media screen and (max-width: 480px) {
     #bullet h3 {
-        padding-top: 60px;
-        padding-bottom: 20px;
+        padding-top: 50px;
+        padding-bottom: 10px;
         text-align: center;
-        font-size: 22px;
+        font-size: 20px;
     }
     #bullet p {
         margin-left: 5%;
@@ -430,6 +461,7 @@ header h3 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 90px 0 90px;
+    padding-bottom: 50px;
 }
 
 .post-left {
@@ -483,12 +515,13 @@ header h3 {
     font-weight: 700;
     font-size: 26px;
     margin: -9px;
+    padding-bottom: 55px;
 }
 
 .post-right h6 {
     font-size: 14px;
     font-weight: 700;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .post-right p {
@@ -500,11 +533,65 @@ header h3 {
     width: 94px;
     background-color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    margin-right: 25px;
 }
 
-.post-right ul li {
-    display: inline;
+.spaceUnder td {
+    padding-bottom: 20px;
 }
+
+@media screen and (max-width: 796px) {
+    .post-right h3 {
+        padding-top: 40px;
+        padding-left: 50px;
+    }
+    table {
+        padding-left: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .post-left {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .post-right h3 {
+        padding-left: 15px;
+    }
+    .post-right table {
+        padding-left: 0px;
+    }
+    #socials {
+        padding-left: 20px;
+    }
+    .post-left a {
+        padding-left: 20px;
+    }
+}
+
+
+/*---------- Footer ----------*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #69d2e7;
+    color: #fff;
+    font-size: 16px;
+}
+
+footer h6 {
+    padding: 0 100px;
+    flex: 0 1 220px;
+}
+
+@media screen and (max-width: 796px) {
+    footer h6 {
+        padding: 0 30px;
+    }
+}
+
 
 /*---------- Clear Fix 001 ----------*/
 
