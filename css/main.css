@@ -395,8 +395,8 @@ header h3 {
 /*---------- Bullet ----------*/
 
 #bullet {
-    background-color: #fa6900;
     padding-bottom: 50px;
+    background: radial-gradient(circle at 91% 50%, transparent 35%, #fa6900 15px);
 }
 
 #bullet h3 {
@@ -423,6 +423,18 @@ header h3 {
 
 #bullet p:last-child {
     padding-bottom: 120px;
+}
+
+@media screen and (max-width: 950px) {
+    #bullet {
+        background: radial-gradient(circle at 120% 50%, transparent 40%, #fa6900 15px);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #bullet {
+        background: #fa6900;
+    }
 }
 
 @media screen and (max-width: 720px) {
